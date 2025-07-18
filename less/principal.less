@@ -1,0 +1,59 @@
+.fondo {
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    width: 100vw;
+    margin: auto;
+
+    .bton {
+        padding: 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+        height: 70%;
+        width: 90%;
+        position: relative;
+
+        .btnSi,
+        .btnNo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 64px;
+            height: 30px;
+            border-radius: 9px;
+        }
+
+        .btnSi {
+            position: absolute;
+            top: 50%;
+            left: 60%;
+            transform: translate(-50%, -50%);
+        }
+
+        .btnNo {
+            position: absolute;
+            top: 50%;
+            left: 40%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
+
+.cuandosi {
+    background-color: antiquewhite;
+    display: none;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    width: 100vw;
+    margin: auto;
+}
