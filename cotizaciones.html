@@ -4,18 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="less/principal.less">
-    <script type="module" src="public/menu.js"></script>
+    <script type="module" src="/menu.js"></script>
     <title>Document</title>
 </head>
 
 <body>
     {{>header}}
     <main>
-        <section>
-            <h1>Cotizaciones</h1>
-            <p>Transforma tu hogar con soluciones confiables y especializadas.
-                Cotiza hoy sin compromiso y recibe atención personalizada en techos, siding, concreto y más.
-            </p>
+        <section class="cotizaciones">
+            <div class="mensaje-encabezado">
+                <h1>Cotizaciones</h1>
+                <p>Transforma tu hogar con soluciones confiables y especializadas.
+                    Cotiza hoy sin compromiso y recibe atención personalizada en techos, siding, concreto y más.
+                </p>
+            </div>
+            <p>Seleccione una opción para proceder con la cotizacion</p>
+            <section class="seleccion-servicios">
+                <button class="servicio" type="button">
+                    <p>Techos de asfalto</p>
+                </button>
+                <button class="servicio" type="button">
+                    <p>Techos de asfalto</p>
+                </button>
+                <button class="servicio" type="button">
+                    <p>Techos de asfalto</p>
+                </button>
+                <button class="servicio" type="button">
+                    <p>Techos de asfalto</p>
+                </button>
+            </section>
+            <section class="contenedor-formulario">
+                <p>
+                    Por favor llene el siguiente formulario:
+                </p>
+                <form action="cotizaciones.html" method="get">
+                    <div class="elemento-formulario">
+                        <label for="txtDimensiones">Dimensiones</label>
+                        <input type="text" id="txtDimensiones" name="txtDimensiones" placeholder="Dimensiones en m^2"
+                            title="Dimensiones de la construccion en metros cuadrados"></imput>
+                    </div>
+                    <div class="elemento-formulario">
+                        <label for="txtCondicion">Condicion Actual</label>
+                        <input type="text" id="txtCondicion" name="txtCondicion"
+                            placeholder="Condicion actual de la residencia" title="Condicion actual de la residencia">
+                        </imput>
+                    </div>
+
+                    <button type="button">
+                        Enviar
+                    </button>
+                </form>
+            </section>
         </section>
     </main>
     {{>footer}}
