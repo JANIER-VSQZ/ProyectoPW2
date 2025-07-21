@@ -1,1 +1,41 @@
-//Aqui me falta decidir que fuente usar
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+// Variables de Color
+@header-color-fondo: #2d2d2d;
+@header-color-fuente: #fff;
+@header-color-boton: #2596be;
+@header-color-fondo-boton: #4f4f4f;
+@header-color-fuente-hover: #000;
+@header-color-fondo-hover: aquamarine;
+
+@footer-color-fuente: aliceblue;
+
+// Variables de Medidas
+@1: 1rem;
+
+
+
+// Mixins
+.header-imagen {
+    height: 64px;
+    width: 64px;
+    border-radius: 19px;
+}
+
+.header-enlaces-border {
+    border-radius: 25px;
+}
+
+.flex-alineado {
+  display: flex;
+  align-items: center;
+  gap: @1;
+}
+
+.sombra-suave {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.padding-enlace {
+    padding: 0.7rem;
+}
