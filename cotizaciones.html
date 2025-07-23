@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="less/principal.less">
     <script type="module" src="/menu.js"></script>
+    <script type="module" src="js/cotizaciones.js"></script>
     <title>Document</title>
 </head>
 
@@ -18,41 +19,76 @@
                     Cotiza hoy sin compromiso y recibe atención personalizada en techos, siding, concreto y más.
                 </p>
             </div>
-            <p>Seleccione una opción para proceder con la cotizacion</p>
-            <section class="seleccion-servicios">
-                <button class="servicio" type="button">
-                    <p>Techos de asfalto</p>
-                </button>
-                <button class="servicio" type="button">
-                    <p>Techos de asfalto</p>
-                </button>
-                <button class="servicio" type="button">
-                    <p>Techos de asfalto</p>
-                </button>
-                <button class="servicio" type="button">
-                    <p>Techos de asfalto</p>
-                </button>
-            </section>
+            <p>Seleccione el o los servicios que desea solicitar</p>
+            {{>cotizacionServicios servicioData=servicios}}
             <section class="contenedor-formulario">
                 <p>
                     Por favor llene el siguiente formulario:
                 </p>
-                <form action="cotizaciones.html" method="get">
-                    <div class="elemento-formulario">
-                        <label for="txtDimensiones">Dimensiones</label>
-                        <input type="text" id="txtDimensiones" name="txtDimensiones" placeholder="Dimensiones en m^2"
-                            title="Dimensiones de la construccion en metros cuadrados"></imput>
-                    </div>
-                    <div class="elemento-formulario">
-                        <label for="txtCondicion">Condicion Actual</label>
-                        <input type="text" id="txtCondicion" name="txtCondicion"
-                            placeholder="Condicion actual de la residencia" title="Condicion actual de la residencia">
-                        </imput>
-                    </div>
+                <div class="resultado-seleccion" id="resultado-seleccion">
 
-                    <button type="button">
-                        Enviar
-                    </button>
+                </div>
+                <form action="cotizaciones.html" method="get">
+                    <div class="seccion-formulario">
+                        <p>
+                            Informacion general del servicio
+                        </p>
+                        <div class="elemento-formulario">
+                            <label for="txtDimensiones">Dimensiones de la residencia</label>
+                            <input type="text" id="txtDimensiones" name="txtDimensiones"
+                                placeholder="Dimensiones en m^2"
+                                title="Dimensiones de la construccion en metros cuadrados"></imput>
+                        </div>
+                        <div class="elemento-formulario">
+                            <label for="txtCondicion">Condicion Actual</label>
+                            <input type="text" id="txtCondicion" name="txtCondicion"
+                                placeholder="Condicion actual de la residencia"
+                                title="Condicion actual de la residencia">
+                            </imput>
+                        </div>
+                        <div class="elemento-formulario">
+                            <label for="txtUbicacion">Ubicacion exacta</label>
+                            <input type="text" id="txtUbicacion" name="txtUbicacion"
+                                placeholder="Ubicacion actual de la residencia"
+                                title="Ubicacion actual de la residencia">
+                            </imput>
+                        </div>
+                        <div class="elemento-formulario">
+                            <label for="txtobservacion">observaciones</label>
+                            <input type="text" id="txtobservacion" name="txtobservacion"
+                                placeholder="Detalles importantes"
+                                title="Detalle importante que desee incluir o solicitar">
+                            </imput>
+                        </div>
+                    </div>
+                    <div class="seccion-formulario">
+                        <p>
+                            Informacion personal
+                        </p>
+                        <div class="elemento-formulario">
+                            <label for="txtNombre">Nombre</label>
+                            <input type="text" id="txtNombre" name="txtNombre" placeholder="Nombre"
+                                title="Nombre del solicitante">
+                            </imput>
+                        </div>
+                        <div class="elemento-formulario">
+                            <label for="txtApellido">Apellido</label>
+                            <input type="text" id="txtApellido" name="txtApellido" placeholder="Apellido"
+                                title="Apellido del solicitante">
+                            </imput>
+                        </div>
+                        <div class="elemento-formulario">
+                            <label for="txtCorreo">Correo</label>
+                            <input type="email" id="txtCorreo" name="txtCorreo" placeholder="Correo"
+                                title="Correo del solicitante">
+                            </imput>
+                        </div>
+                    </div>
+                    <div class="seccion-formulario">
+                        <button type="submit">
+                            Enviar
+                        </button>
+                    </div>
                 </form>
             </section>
         </section>
