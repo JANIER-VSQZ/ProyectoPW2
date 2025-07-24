@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let seleccionServicio = document.getElementById('resultado-seleccion')
         const result = [...selected].join(', ');
         seleccionServicio.textContent=
-            result ? `Seleccionaste: ${result}` : 'No has seleccionado ningún servicio.';
+            result ? `Servicios seleccionados: ${result}` : 'Por favor, seleccione un servicio';
     }
 
 })

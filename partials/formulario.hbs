@@ -1,0 +1,28 @@
+<form action="{{formAction}}" method="get" novalidate>
+    {{#each secciones}}
+        <div class="seccion-formulario">
+            <p>{{this.descripcionSeccion}}</p>
+            {{#each campos}}
+                <div class="elemento-formulario">
+                    {{#if this.label}}
+                        <label for={{this.id}}>{{this.label}}</label>
+                    {{/if}}
+                    <input 
+                    type="{{this.type}}"
+                    id="{{this.id}}" 
+                    name="{{this.name}}" 
+                    placeholder="{{this.placeholder}}"
+                    title="{{this.title}}"
+                    {{#if this.required}}
+                        required
+                    {{/if}}
+                    >
+                    
+                </div>
+            {{/each}}
+            {{#if this.boton}}
+                <button type="submit">{{this.boton}}</button>
+            {{/if}}
+        </div>
+    {{/each}}
+</form>
