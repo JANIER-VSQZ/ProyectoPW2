@@ -38,6 +38,17 @@ main {
     .sombra-suave();
 
     .encabezado {
+        .logo-link {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: inherit;
+
+            h1 {
+                margin-left: @1;
+            }
+        }
+
         .flex-alineado();
 
         img {
@@ -63,7 +74,7 @@ main {
         li {
             //background-color: #2596be;
             .header-enlaces-border();
-            
+
             a {
                 display: block;
                 .padding-enlace();
@@ -232,5 +243,5 @@ footer {
         margin: 0;
     }
 }
-
+@import "hero.less";
 @import "cotizaciones.less";
