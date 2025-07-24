@@ -1,9 +1,9 @@
-<form action="{{formAction}}" method="get" novalidate>
+<form id="{{frmId}}" action="{{formAction}}" method="get" novalidate>
     {{#each secciones}}
         <div class="seccion-formulario">
             <p>{{this.descripcionSeccion}}</p>
             {{#each campos}}
-                <div class="elemento-formulario">
+                <div class="div{{this.name}}" id="div{{this.name}}">
                     {{#if this.label}}
                         <label for={{this.id}}>{{this.label}}</label>
                     {{/if}}

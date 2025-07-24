@@ -78,26 +78,34 @@
                         width: 49%;
                     }
 
-                    .elemento-formulario {
+                    div{
                         display: flex;
                         flex-direction: row;
+                        flex-wrap: wrap;
                         justify-content: space-between;
                         align-items: center;
                         width: 100%;
-                        height: 40px;
 
                         input {
                             width: 55%;
-                            height: 100%;
+                            height: 40px;
 
                             &::placeholder {
                                 font-size: 1rem;
+                            }
+                            &.error{
+                                border: 1px solid red;
+                                outline-color: red;
                             }
                         }
 
                         label {
                             width: 40%;
                             text-align: left;
+                        }
+                        &.error{
+                            color: red;
+                            font-size: 1rem;
                         }
                     }
 

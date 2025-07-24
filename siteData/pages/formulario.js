@@ -1,6 +1,7 @@
 export default {
     formCotizacion:
     {
+        frmId: "frmCotizacion",
         formAction: "cotizaciones.html",
         secciones: [
             {
@@ -10,7 +11,7 @@ export default {
                         label: "Dimensiones de la residencia",
                         id: "txtDimensiones",
                         type: "Text",
-                        name: "txtDimensiones",
+                        name: "Dimensiones",
                         placeholder: "Dimensiones en m^2.",
                         title: "Las medidas del lugar donde se realizara el trabajo.",
                         required: true
@@ -19,7 +20,7 @@ export default {
                         label: "Condicion Actual",
                         id: "txtCondicion",
                         type: "Text",
-                        name: "txtCondicion",
+                        name: "Condicion",
                         placeholder: "Condicion actual de la residencia.",
                         title: "condicion en la que se encuentra el lugar de trabajo.",
                         required: true
@@ -28,7 +29,7 @@ export default {
                         label: "Ubicacion Exacta",
                         id: "txtUbicacion",
                         type: "Text",
-                        name: "txtUbicacion",
+                        name: "Ubicacion",
                         placeholder: "Ubicacion de la residencia.",
                         title: "Ubicacion exacta del lugar donde se hara el trabajo.",
                         required: true
@@ -37,7 +38,7 @@ export default {
                         label: "Observaciones",
                         id: "txtObservacion",
                         type: "Text",
-                        name: "txtObservacion",
+                        name: "Observacion",
                         placeholder: "Detalles importantes.",
                         title: "Detalles importantes que le gustaria añadir.",
                         required: true
@@ -51,7 +52,7 @@ export default {
                         label: "Nombre",
                         id: "txtNombre",
                         type: "Text",
-                        name: "txtNombre",
+                        name: "Nombre",
                         placeholder: "Nombre del solicitante.",
                         title: "Nombre del solicitante.",
                         required: true
@@ -60,7 +61,7 @@ export default {
                         label: "Apellido",
                         id: "txtApellido",
                         type: "Text",
-                        name: "txtApellido",
+                        name: "Apellido",
                         placeholder: "Apellido del solicitante.",
                         title: "Apellido del solicitante.",
                         required: true
@@ -69,7 +70,7 @@ export default {
                         label: "Correo Electronico",
                         id: "txtCorreo",
                         type: "Email",
-                        name: "txtCorreo",
+                        name: "Correo",
                         placeholder: "Correo Electronico del solicitante.",
                         title: "Correo Electronico del solicitante.",
                         required: true
