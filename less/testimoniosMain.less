@@ -1,0 +1,93 @@
+@import "variables.less";
+
+.testimonial-grid {
+    display: flex;
+    justify-content: center;
+    gap: @2;
+    padding: @2;
+    // background-color: #f8f8f8;
+    background-color: @fondo;
+    flex-wrap: wrap;
+
+    @media (min-width: 1024px) {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .testimonial-card {
+         background: white;
+        // background-color: rgb(233, 233, 233);
+        // color: white;
+        padding: 1.5rem;
+        width: 300px;
+        border-radius: 12px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+        text-align: center;
+        transition: transform 0.4s ease, box-shadow 0.4s ease;
+
+        blockquote {
+            font-style: italic;
+            font-size: @1;
+            color: #333;
+            margin: 0;
+            transition: font-size 0.4s ease;
+        }
+
+        &:hover {
+            transform: scale(1.03) rotate3d(1, 1, 0, 5deg);
+            // box-shadow: 0 20px 30px rgba(227, 51, 51, 0.2);
+            box-shadow: 0 20px 30px rgba(37, 150, 190, 0.5);
+            cursor: pointer;
+            border: 1.5px solid rgba(227, 51, 51, 0.2);
+
+        }
+
+        @media (min-width: 1024px) {
+            &:hover {
+                blockquote {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+
+        .testimonial-avatar {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: @1;
+
+            img {
+                width: 100px;
+                height: 100px;
+                object-fit: cover;
+                border-radius: 50%;
+                border: 3px solid #ccc;
+            }
+
+            p {
+                font-weight: bolder;
+                color: #666;
+                margin-top: 0.5em;
+                margin-bottom: 0;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            text-align: left;
+
+            .testimonial-avatar {
+                margin-right: 2rem;
+                margin-bottom: 0;
+
+                p {
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+}
