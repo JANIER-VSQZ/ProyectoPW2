@@ -9,20 +9,20 @@
         </div>
 
         <ul class="menu">
-            <li><a href="servicios.html">Servicios</a></li>
-            <li><a href="proyectosDestacados.html">Proyectos Destacados</a></li>
-            <li><a href="cotizaciones.html">Cotizaciones</a></li>
-            <li><a href="galeria.html">Galería</a></li>
-            <li><a href="testimonios.html">Testimonios</a></li>
-            <li><a href="mesaEmpleos.html">Mesa de Empleos</a></li>
+            <li {{#if menu_1}}class="selected" {{/if}}><a href="servicios.html">Servicios</a></li>
+            <li {{#if menu_2}}class="selected" {{/if}}><a href="proyectosDestacados.html">Proyectos Destacados</a></li>
+            <li {{#if menu_3}}class="selected" {{/if}}><a href="cotizaciones.html">Cotizaciones</a></li>
+            <li {{#if menu_4}}class="selected" {{/if}}><a href="galeria.html">Galería</a></li>
+            <li {{#if menu_5}}class="selected" {{/if}}><a href="testimonios.html">Testimonios</a></li>
+            <li {{#if menu_6}}class="selected" {{/if}}><a href="mesaEmpleos.html">Mesa de Empleos</a></li>
 
             <!-- Menu desplegable de más -->
             <li class="dropdown">
                 <button class="dropdown-toggle">Más ▾</button>
                 <ul class="submenu">
-                    <li><a href="acercaNosotros.html">Acerca de Nosotros</a></li>
-                    <li><a href="preguntasFrecuentes.html">Preguntas Frecuentes</a></li>
-                    <li><a href="contactenos.html">Contáctenos</a></li>
+                    <li {{#if menu_7}}class="selected" {{/if}}><a href="acercaNosotros.html">Acerca de Nosotros</a></li>
+                    <li {{#if menu_8}}class="selected" {{/if}}><a href="preguntasFrecuentes.html">Preguntas Frecuentes</a></li>
+                    <li {{#if menu_9}}class="selected" {{/if}}><a href="contactenos.html">Contáctenos</a></li>
                 </ul>
             </li>
         </ul>
