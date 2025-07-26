@@ -1,6 +1,7 @@
 import cotizacionData from './pages/cotizacion-servicio';
 import formularioData from './pages/formulario'
 import testimoniosMainData from './pages/testimoniosMain';
+import heroData from './pages/heroImagenes';
 
 function context(page){
     console.log("Getting context for: " + page);
@@ -9,7 +10,7 @@ function context(page){
     }
     switch(page){
         case "/index.html":
-            context = {...context, ...testimoniosMainData};
+            context = {...context, ...heroData, ...testimoniosMainData};
             break;
         case '/cotizaciones.html':
             context = {...context, ...cotizacionData, ...formularioData};
