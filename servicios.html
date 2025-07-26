@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="less/principal.less">
+    <script type="module" src="public/menu.js"></script>
+    <title>Servicios</title>
+</head>
+
+<body>
+    {{>header menu_1="true"}}
+    <main style="background-color: rgba(131, 236, 201, 0.801);">
+        <section class="servicios-contenedor">
+            <h1>Servicios</h1>
+            {{>cartasServicios cartaData=servicios}}    
+        </section>
+    </main>
+    {{>footer}}
+</body>
+
+</html>
