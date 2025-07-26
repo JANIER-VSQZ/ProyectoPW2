@@ -1,39 +1,49 @@
 import { preguntasFrecuentes } from './faqData.js';
 
 const contenedor = document.getElementById('faq-lista');
+const buscador = document.getElementById('buscador');
 
-preguntasFrecuentes.forEach((item, index) => {
+// muestra preguntas
+function renderPreguntas(filtradas = preguntasFrecuentes) {
+  contenedor.innerHTML = ''; // Limpia contenido actual
+
+  filtradas.forEach((item, index) => {
     const pregunta = document.createElement('div');
     pregunta.classList.add('faq-item');
 
+    // Simbolo como boton para desplegar
     const encabezado = document.createElement('button');
     encabezado.classList.add('faq-pregunta');
-    encabezado.innerText = item.pregunta;
     encabezado.setAttribute('data-index', index);
+    encabezado.innerHTML = `<span class="triangulo">▶</span> ${item.pregunta}`;
 
     const respuesta = document.createElement('div');
     respuesta.classList.add('faq-respuesta');
     respuesta.innerText = item.respuesta;
     respuesta.style.display = 'none';
 
+    // cambio de simbolo para desplegar 
     encabezado.addEventListener('click', () => {
-        const visible = respuesta.style.display === 'block';
-        respuesta.style.display = visible ? 'none' : 'block';
+      const abierto = respuesta.style.display === 'block';
+      respuesta.style.display = abierto ? 'none' : 'block';
+      const tri = encabezado.querySelector('.triangulo');
+      tri.textContent = abierto ? '▶' : '▼';
     });
 
     pregunta.appendChild(encabezado);
     pregunta.appendChild(respuesta);
     contenedor.appendChild(pregunta);
-});
-
-let todasVisibles = false;
-
-document.getElementById('mostrar-todas').addEventListener('click', (e) => {
-  todasVisibles = !todasVisibles;
-
-  document.querySelectorAll('.faq-respuesta').forEach(div => {
-    div.style.display = todasVisibles ? 'block' : 'none';
   });
+}
 
-  e.target.textContent = todasVisibles ? 'Ocultar respuestas' : 'Ver respuestas';
+// busqueda
+buscador.addEventListener('input', (e) => {
+  const texto = e.target.value.toLowerCase();
+  const filtradas = preguntasFrecuentes.filter(p =>
+    p.pregunta.toLowerCase().includes(texto)
+  );
+  renderPreguntas(filtradas);
 });
+
+// todas las preguntas
+renderPreguntas();
