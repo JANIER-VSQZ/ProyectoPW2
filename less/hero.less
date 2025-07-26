@@ -153,6 +153,19 @@
             overflow: hidden;
             padding: 0 0 0 2rem;
 
+            h2 {
+                .flecha::before {
+                    content: "▼";
+                    display: inline-block;
+                    margin-left: 0.5rem;
+                    transition: transform 0.3s ease;
+                }
+            }
+
+            &:hover .flecha::before {
+                transform: rotate(90deg);
+            }
+
             &::after {
                 content: "'Pasar el mouse para ver más información'";
                 font-size: 0.85rem;
