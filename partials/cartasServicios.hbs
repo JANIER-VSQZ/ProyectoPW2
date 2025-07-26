@@ -1,0 +1,18 @@
+<section class="cartas-servicios">
+    {{#each cartaData}}
+        <div class="carta-servicio">
+            <div class="img-servicio">
+                <img src={{this.imgLink}} alt="imagen {{this.titulo}}">
+            </div>
+            <div class="titulo-servicio">
+                {{this.titulo}}
+            </div>
+            <div class="footer-servicio">
+                <p>{{this.descripcion}}</p>
+                <div class="btn-servicio">
+                    <a href="cotizaciones.html">Solicitar Cotización</a>
+                </div>
+            </div>
+        </div>
+    {{/each}}
+</section>
