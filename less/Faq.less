@@ -1,0 +1,59 @@
+@import "variables.less";
+
+.botones-control {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: @1;
+
+  button {
+    background-color: @header-color-boton;
+    color: @header-color-fuente;
+    padding: 0.7rem @1;
+    border: none;
+    border-radius: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+
+    &:hover {
+      background-color: @header-color-fondo-hover;
+      color: @header-color-fuente-hover;
+    }
+  }
+}
+
+.contenedor-preguntas {
+  max-width: 800px;
+  margin: 1rem auto;
+  padding: @1;
+}
+
+.faq-item {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.faq-pregunta {
+  background-color: @header-color-fondo-boton;
+  color: @header-color-fuente;
+  padding: @1;
+  width: 100%;
+  text-align: left;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: @header-color-fondo-hover;
+    color: @header-color-fuente-hover;
+  }
+}
+
+.faq-respuesta {
+  background-color: white;
+  padding: @1;
+  font-size: 1rem;
+  line-height: 1.5;
+}
