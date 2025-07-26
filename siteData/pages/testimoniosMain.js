@@ -10,5 +10,10 @@ export default{
             testimonio: "Trabajo muy bien pagado, sin demora alguna, un espacio de trabajo agradable",
             nombre: "Perez Guitierrez, roof"
         },
+        {
+            imagen: "https://picsum.photos/id/50/480/480",
+            testimonio: "Tengo Hambre",
+            nombre: "Diego Hernández, carpintero"
+        }
     ]
 }

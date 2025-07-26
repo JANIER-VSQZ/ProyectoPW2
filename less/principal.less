@@ -95,6 +95,7 @@ main {
             a {
                 color: @header-color-fuente-hover;
             }
+
             background-color: @header-color-fondo-hover;
         }
 
@@ -136,6 +137,14 @@ main {
                 z-index: 1000;
                 min-width: 180px;
 
+                .selected {
+                    background-color: @header-color-fondo-hover;
+
+                    a {
+                        color: @header-color-fuente-hover;
+                    }
+                }
+
                 li {
                     margin-bottom: 0.5rem;
                     // background-color: #2596be;
@@ -157,6 +166,8 @@ main {
                             color: @header-color-fuente-hover;
                         }
                     }
+
+
                 }
             }
 
@@ -250,6 +261,7 @@ footer {
         margin: 0;
     }
 }
+
 @import "hero.less";
 @import "testimoniosMain.less";
 @import "cotizaciones.less";
