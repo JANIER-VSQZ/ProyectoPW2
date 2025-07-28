@@ -2,108 +2,108 @@ export default {
   datosMesaEmpleos: [
     {
       plaza: "Ingeniero Civil",
-      ciudad: "Tegucigalpa",
+      ciudad: "Bridgewater, NJ",
       tipoContrato: "Tiempo completo",
       descripcionPuesto:
-        "Supervisión y diseño de proyectos de infraestructura urbana y rural. Se requiere título universitario en Ingeniería Civil, al menos 3 años de experiencia en obras públicas, dominio de AutoCAD y Civil 3D. Inglés intermedio requerido."
+        "Responsable de la planificación y supervisión de proyectos de infraestructura como casas, edificios y carreteras. Se requiere título universitario en Ingeniería Civil y al menos 3 años de experiencia en campo. Dominio de AutoCAD y Civil 3D. Inglés fluido obligatorio, español deseable."
     },
     {
-      plaza: "Maestro de Obras",
-      ciudad: "San Pedro Sula",
+      plaza: "Supervisor de Construcción",
+      ciudad: "Englewood Cliffs, NJ",
       tipoContrato: "Tiempo completo",
       descripcionPuesto:
-        "Coordinación diaria en el sitio de construcción. Experiencia comprobada de al menos 5 años liderando cuadrillas. Educación técnica en construcción civil. Se valoran conocimientos básicos de seguridad industrial. Español fluido requerido."
+        "Supervisión directa de cuadrillas de construcción en obra. Experiencia mínima de 5 años liderando proyectos de edificación o vialidad. Conocimiento de regulaciones OSHA. Se prefiere bilingüe inglés/español."
     },
     {
       plaza: "Topógrafo",
-      ciudad: "La Ceiba",
-      tipoContrato: "Contrato por proyecto",
+      ciudad: "Fort Lee, NJ",
+      tipoContrato: "Por proyecto",
       descripcionPuesto:
-        "Responsable de realizar levantamientos topográficos y mediciones de terreno para proyectos de urbanismo y edificación. Se requiere manejo de estación total, GPS y software topográfico. Inglés técnico deseable."
+        "Medición y levantamiento de terrenos para futuros desarrollos. Se requiere conocimiento en estaciones totales, GPS y software CAD. Técnico o ingeniero en topografía. Inglés obligatorio, alemán es una ventaja."
     },
     {
       plaza: "Arquitecto",
-      ciudad: "Choluteca",
+      ciudad: "Livingston, NJ",
       tipoContrato: "Medio tiempo",
       descripcionPuesto:
-        "Diseño de planos arquitectónicos y apoyo en presentación de propuestas. Manejo de AutoCAD, Revit, y SketchUp. Título universitario en arquitectura. Experiencia de 2 años mínima. Inglés básico obligatorio, alemán es una ventaja."
-    },
-    {
-      plaza: "Obrero de Construcción",
-      ciudad: "Comayagua",
-      tipoContrato: "Tiempo completo",
-      descripcionPuesto:
-        "Participación en la construcción de viviendas y edificios. No se requiere formación académica específica, pero sí experiencia previa en mezcla, albañilería y uso de herramientas. Español fluido requerido."
-    },
-    {
-      plaza: "Electricista Industrial",
-      ciudad: "Puerto Cortés",
-      tipoContrato: "Tiempo completo",
-      descripcionPuesto:
-        "Instalación de sistemas eléctricos en edificaciones y obras viales. Técnico en electricidad con certificado vigente. 2 años de experiencia en obras de gran escala. Inglés técnico es un plus."
-    },
-    {
-      plaza: "Plomero",
-      ciudad: "Tela",
-      tipoContrato: "Medio tiempo",
-      descripcionPuesto:
-        "Instalación de redes hidráulicas y sanitarias en viviendas y edificios. Experiencia mínima de 2 años. Se requiere saber interpretar planos básicos. Español obligatorio."
+        "Diseño de planos arquitectónicos y validación con normativas locales. Mínimo 2 años de experiencia. Manejo avanzado de AutoCAD, Revit y SketchUp. Inglés fluido, alemán o español opcional."
     },
     {
       plaza: "Operador de Maquinaria Pesada",
-      ciudad: "San Pedro Sula",
+      ciudad: "Union, NJ",
       tipoContrato: "Tiempo completo",
       descripcionPuesto:
-        "Manejo de retroexcavadoras, niveladoras y compactadoras. Licencia vigente tipo especial. Experiencia de 3 años en obras viales. Español fluido, inglés técnico es deseable."
+        "Operación de excavadoras, cargadores frontales y retroexcavadoras. Licencia válida y 2 años de experiencia. Inglés básico y español fluido requeridos por seguridad en el sitio."
     },
     {
-      plaza: "Albañil Especializado",
-      ciudad: "Tegucigalpa",
+      plaza: "Obrero de Construcción General",
+      ciudad: "Mendham, NJ",
       tipoContrato: "Tiempo completo",
       descripcionPuesto:
-        "Construcción de muros, estructuras y encofrados. Experiencia mínima de 4 años en proyectos de vivienda vertical. Capacidad de interpretar planos básicos. Español requerido."
+        "Apoyo general en obra: mezcla de cemento, carga de materiales, limpieza de áreas. No se requiere experiencia previa, pero se valorará. Se ofrece capacitación. Español necesario, inglés básico."
     },
     {
-      plaza: "Supervisor de Seguridad Industrial",
-      ciudad: "Danlí",
+      plaza: "Técnico Electricista de Obra",
+      ciudad: "Flemington, NJ",
       tipoContrato: "Tiempo completo",
       descripcionPuesto:
-        "Garantizar el cumplimiento de normas de seguridad en obras. Técnico o ingeniero con especialización en seguridad industrial. Certificaciones como OSHA son deseables. Inglés básico necesario."
+        "Instalación eléctrica en edificaciones en construcción. Certificación válida y 3 años de experiencia en obra. Inglés obligatorio, español deseado."
     },
     {
-      plaza: "Ingeniero Geotécnico",
-      ciudad: "Santa Rosa de Copán",
-      tipoContrato: "Contrato por proyecto",
-      descripcionPuesto:
-        "Evaluación del suelo para proyectos de cimentación y pavimentación. Maestría en geotecnia es preferida. Experiencia comprobada en análisis de laboratorio y campo. Inglés avanzado requerido."
-    },
-    {
-      plaza: "Encargado de Logística de Obra",
-      ciudad: "La Paz",
+      plaza: "Albañil",
+      ciudad: "Somerset, NJ",
       tipoContrato: "Tiempo completo",
       descripcionPuesto:
-        "Planificación y control de materiales, equipos y personal. Carrera técnica en logística o administración. Experiencia mínima de 2 años en construcción. Español e inglés básico requeridos."
+        "Construcción de muros, estructuras de concreto y acabado fino. Experiencia comprobada de al menos 4 años. Se requiere español fluido, inglés opcional."
     },
     {
-      plaza: "Diseñador Estructural",
-      ciudad: "San Pedro Sula",
+      plaza: "Técnico en Plomería",
+      ciudad: "Linden, NJ",
+      tipoContrato: "Por contrato",
+      descripcionPuesto:
+        "Instalación de tuberías, sistemas de drenaje y revisión de planos hidráulicos. Técnico certificado, mínimo 2 años de experiencia. Inglés y español requeridos."
+    },
+    {
+      plaza: "Capataz de Obra",
+      ciudad: "Clark, NJ",
+      tipoContrato: "Tiempo completo",
+      descripcionPuesto:
+        "Coordinación de equipos de construcción, cronogramas y materiales. Experiencia como jefe de obra por al menos 5 años. Inglés fluido necesario, con habilidades de comunicación en español."
+    },
+    {
+      plaza: "Ingeniero Estructural",
+      ciudad: "Edison, NJ",
+      tipoContrato: "Tiempo completo",
+      descripcionPuesto:
+        "Cálculo y diseño de estructuras para edificios residenciales y comerciales. Licenciatura en Ingeniería Estructural o Civil. Inglés avanzado y alemán técnico recomendado para colaboración internacional."
+    },
+    {
+      plaza: "Ayudante de Construcción",
+      ciudad: "Avenel, NJ",
       tipoContrato: "Medio tiempo",
       descripcionPuesto:
-        "Cálculo estructural de edificaciones. Ingeniero civil con experiencia en software como SAP2000, ETABS, SAFE. Se requiere dominio del inglés técnico."
+        "Asistencia en tareas básicas de obra como carga, limpieza, y soporte al personal especializado. No se requiere experiencia. Español indispensable, inglés básico útil."
     },
     {
-      plaza: "Técnico en Pavimentación",
-      ciudad: "Tegucigalpa",
-      tipoContrato: "Contrato por proyecto",
-      descripcionPuesto:
-        "Aplicación de técnicas de asfaltado, control de mezcla y maquinaria. Certificación en control de calidad vial deseable. Español obligatorio. Inglés no requerido."
-    },
-    {
-      plaza: "Encargado de Control de Calidad",
-      ciudad: "El Progreso",
+      plaza: "Especialista en Demoliciones",
+      ciudad: "Cranford, NJ",
       tipoContrato: "Tiempo completo",
       descripcionPuesto:
-        "Verificación de materiales y acabados en obra. Técnico en construcción o ingeniería civil. Experiencia de 3 años. Se valoran conocimientos en normas ASTM. Inglés técnico es una ventaja."
+        "Ejecutar tareas de demolición de estructuras según protocolos de seguridad. Conocimiento de maquinaria y uso de explosivos controlados. Español e inglés requeridos."
+    },
+    {
+      plaza: "Ingeniero de Caminos",
+      ciudad: "Fords, NJ",
+      tipoContrato: "Tiempo completo",
+      descripcionPuesto:
+        "Planificación y supervisión de obras viales y urbanas. Experiencia con proyectos DOT. Se requiere nivel alto de inglés técnico. Conocimiento básico de alemán es un plus."
+    },
+    {
+      plaza: "Especialista en Hormigón",
+      ciudad: "Union, NJ",
+      tipoContrato: "Por proyecto",
+      descripcionPuesto:
+        "Responsable de mezclas, vaciado y curado de concreto. Certificación en técnicas de hormigón preferida. Español fluido requerido; inglés deseable."
     }
   ]
 }
