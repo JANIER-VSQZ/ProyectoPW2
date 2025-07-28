@@ -1,0 +1,106 @@
+// Paleta de colores profesional para construcción
+// Fondo general: tonos neutros/gris claro
+// Cards: blancos o gris claro con sombras suaves
+// Accent: dorado construcción visible
+// Texto: gris oscuro para buena legibilidad
+
+@background-page: #f4f4f4;
+@card-bg: #ffffff;
+@accent: #daa520;
+@text-color: #2e2e2e;
+@shadow: rgba(0, 0, 0, 0.1);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.fondo {
+  background-color: @background-page;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: @text-color;
+  min-height: 100vh;
+}
+
+.fondo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+
+  h1 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    color: @accent;
+    text-transform: uppercase;
+    border-bottom: 3px solid @accent;
+    padding-bottom: 0.5rem;
+  }
+p{
+  text-align: justify;
+}
+  .galeria {
+    display: grid;
+    // Diseño responsivo: 1 columna por defecto
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    width: 100%;
+    max-width: 1200px;
+
+    // En pantallas de escritorio: 2 columnas
+    @media (min-width: 1024px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .imagen {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: @card-bg;
+    box-shadow: 0 4px 8px @shadow;
+    border-bottom: 4px solid @accent;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px) scale(1.02);
+      box-shadow: 0 8px 16px @shadow;
+      border-color: darken(@accent, 10%);
+
+      .overlay {
+        opacity: 1;
+      }
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), transparent);
+      padding: 1rem;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+
+      .titulo {
+        font-size: 1.1rem;
+        font-weight: bold;
+        color: @accent;
+        margin-bottom: 0.5rem;
+      }
+
+      .descripcion {
+        font-size: 0.9rem;
+        color: #ddd;
+      }
+    }
+  }
+}
