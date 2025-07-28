@@ -3,7 +3,7 @@ import { preguntasFrecuentes } from './faqData.js';
 const contenedor = document.getElementById('faq-lista');
 const buscador = document.getElementById('buscador');
 
-// muestra preguntas
+// muestra preguntas filtradas
 function renderPreguntas(filtradas = preguntasFrecuentes) {
   contenedor.innerHTML = ''; // Limpia contenido actual
 
@@ -11,7 +11,7 @@ function renderPreguntas(filtradas = preguntasFrecuentes) {
     const pregunta = document.createElement('div');
     pregunta.classList.add('faq-item');
 
-    // Simbolo como boton para desplegar
+    // simbolo como boton para desplegar
     const encabezado = document.createElement('button');
     encabezado.classList.add('faq-pregunta');
     encabezado.setAttribute('data-index', index);
@@ -45,5 +45,5 @@ buscador.addEventListener('input', (e) => {
   renderPreguntas(filtradas);
 });
 
-// todas las preguntas
+// muestra todas las preguntas
 renderPreguntas();
