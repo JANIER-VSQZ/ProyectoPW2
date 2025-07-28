@@ -1,0 +1,120 @@
+.servicios-contenedor {
+    .flex-centrado();
+    flex-direction: column;
+    padding: 20px;
+
+    .cartas-servicios {
+        .flex-centrado();
+        align-items: stretch;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2rem;
+        max-width: 1400px;
+        width: 100%;
+        margin: auto;
+
+        @media (min-width: 1440px) {
+            justify-content: space-between;
+        }
+
+        .carta-servicio {
+            .flex-centrado();
+            justify-content: space-between;
+            flex-direction: column;
+            flex: 1 1 600px;
+            max-width: 650px;
+            width: 100%;
+            background-color: white;
+            overflow: hidden;
+            border-radius: 9px;
+            opacity: 0;
+
+            &:hover {
+                box-shadow: 4px 4px 15px 4px @golden;
+                transform: scale(1.05);
+            }
+
+            .img-servicio {
+                width: 100%;
+
+                img {
+                    .img-fit();
+                }
+            }
+
+            .titulo-servicio {
+                padding: 10px;
+                text-align: center;
+                width: 100%;
+                font-size: 1.5rem;
+                font-weight: bold;
+            }
+
+            .body-servicio{
+                padding: 10px;
+            }
+
+            .footer-servicio {
+                padding: 0px;
+                width: 100%;
+
+                .btn-servicio {
+                    width: 100%;
+                    height: 40px;
+                    background-color: @header-color-fondo-boton;
+                    a {
+                        .flex-centrado();
+                        color: @header-color-fuente;
+                        text-decoration: none;
+                        width: 100%;
+                        height: 100%;
+                        text-align: center;
+                        &:hover{
+                            color: rgb(0, 195, 255);
+                        }
+                    }
+                }
+
+            }
+
+            &:nth-child(even) {
+                &.visible {
+                    opacity: 1;
+                    animation: aparecerderecha 1s backwards;
+                }
+            }
+
+            &:nth-child(odd) {
+                &.visible {
+                    opacity: 1;
+                    animation: aparecerizquierda 1s backwards;
+                }
+            }
+
+        }
+    }
+}
+
+@keyframes aparecerderecha {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes aparecerizquierda {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

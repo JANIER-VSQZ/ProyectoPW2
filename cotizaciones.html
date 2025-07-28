@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="less/principal.less">
-    <script type="module" src="public/menu.js"></script>
+    <script type="module" src="/menu.js"></script>
     <script type="module" src="js/cotizaciones.js"></script>
-    <title>Document</title>
+    <title>Cotizaciones</title>
 </head>
 
 <body>
     {{>header menu_3="true"}}
-    <main>
+    <main style="background-color: rgba(131, 236, 201, 0.801);">
         <section class="cotizaciones">
             <div class="mensaje-encabezado">
                 <h1>Cotizaciones</h1>
@@ -19,13 +19,13 @@
                     Cotiza hoy sin compromiso y recibe atención personalizada en techos, siding, concreto y más.
                 </p>
             </div>
-            <section class="fondo-cot">
-                <h2>Detalles</h2>
-                <p>Seleccione el o los servicios que desea solicitar</p>
-                {{>cotizacionServicios servicioData=servicios}}
-                <div class="resultado-seleccion" id="resultado-seleccion">
-                    Selecciona una opcion
-                </div>
+            <h2>Detalles</h2>
+            <p>Seleccione el o los servicios que desea solicitar</p>
+            {{>cotizacionServicios servicioData=servicios}}
+            <div class="resultado-seleccion" id="resultado-seleccion">
+                Selecciona una opcion
+            </div>
+            <section class="fondo-formulario">
                 <section class="contenedor-formulario" id="contenedor-formulario">
                     <p>
                         Por favor llene el siguiente formulario:
@@ -33,6 +33,7 @@
                     {{>formulario formCotizacion}}
                 </section>
             </section>
+
         </section>
 
     </main>

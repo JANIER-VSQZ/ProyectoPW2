@@ -1,21 +1,21 @@
 <form id="{{frmId}}" action="{{formAction}}" method="get" novalidate>
     {{#each secciones}}
         <div class="seccion-formulario">
-            <p>{{this.descripcionSeccion}}</p>
+            <p class="seccion-titulo">{{this.descripcionSeccion}}</p>
             {{#each campos}}
                 <div class="div{{this.name}}" id="div{{this.name}}">
                     {{#if this.label}}
                         <label for={{this.id}}>{{this.label}}</label>
                     {{/if}}
                     <input 
-                    type="{{this.type}}"
-                    id="{{this.id}}" 
-                    name="{{this.name}}" 
-                    placeholder="{{this.placeholder}}"
-                    title="{{this.title}}"
-                    {{#if this.required}}
-                        required
-                    {{/if}}
+                        type="{{this.type}}"
+                        id="{{this.id}}" 
+                        name="{{this.name}}" 
+                        placeholder="{{this.placeholder}}"
+                        title="{{this.title}}"
+                        {{#if this.required}}
+                            required
+                        {{/if}}
                     >
                     
                 </div>

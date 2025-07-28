@@ -18,6 +18,10 @@
     </div>
 
     <div class="hero-imagen">
-        <img src="https://picsum.photos/id/1015/1200/600" alt="Fondo hero"> <!-- Por mientras -->
+        {{#each heroData}}
+        {{>heroImagenes
+            imagen=imagen
+        }}
+        {{/each}}
     </div>
 </section>
