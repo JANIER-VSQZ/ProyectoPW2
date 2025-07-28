@@ -1,9 +1,3 @@
-// Paleta de colores profesional para construcción
-// Fondo general: tonos neutros/gris claro
-// Cards: blancos o gris claro con sombras suaves
-// Accent: dorado construcción visible
-// Texto: gris oscuro para buena legibilidad
-
 @background-page: #f4f4f4;
 @card-bg: #ffffff;
 @accent: #daa520;
@@ -21,35 +15,92 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
   color: @text-color;
   min-height: 100vh;
-}
 
-.fondo {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 2rem 1rem;
+  gap: 1.5rem;
 
-  h1 {
-    margin-bottom: 1.5rem;
-    font-size: 2rem;
-    letter-spacing: 1px;
-    color: @accent;
-    text-transform: uppercase;
-    border-bottom: 3px solid @accent;
-    padding-bottom: 0.5rem;
+  .titulo-galeria {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+
+    h1 {
+      position: relative;
+      cursor: pointer;
+      font-size: 2rem;
+      letter-spacing: 1px;
+      color: @text-color; 
+      text-transform: uppercase;
+      padding-bottom: 0;
+
+      animation: glow 2.5s infinite ease-in-out;
+
+      &:hover {
+        animation-play-state: paused;
+      }
+    }
+
+    .instruccion {
+      font-size: 0.9rem;
+      color: rgba(46, 46, 46, 0.7);
+      transition: opacity 0.3s ease;
+      opacity: 1;
+
+      .titulo-galeria:hover & {
+        opacity: 0;
+      }
+
+      @media (max-width: 1023px) {
+        display: none;
+      }
+    }
+
+    .descripcion-galeria {
+      max-width: 680px;
+      margin: 0 auto;
+      line-height: 1.6;
+      text-align: justify;
+      background-color: #000;
+      border: 2px solid @accent;
+      color: #fff;
+      overflow: hidden;
+      max-height: 0;
+      transition: max-height 0.4s ease, padding 0.4s ease;
+      padding: 0 1rem;
+    }
+
+    &:hover .descripcion-galeria {
+      max-height: 500px;
+      padding: 1rem;
+    }
+
+    @media (max-width: 1023px) {
+      .descripcion-galeria {
+        max-height: none;
+        padding: 1rem;
+      }
+    }
   }
-p{
-  text-align: justify;
-}
+
+  @keyframes glow {
+    0%   { text-shadow: 0 0 5px @accent; }
+    50%  { text-shadow: 0 0 20px lighten(@accent, 10%); }
+    100% { text-shadow: 0 0 5px @accent; }
+  }
+
   .galeria {
     display: grid;
-    // Diseño responsivo: 1 columna por defecto
     grid-template-columns: 1fr;
-    gap: 2rem;
+    column-gap: 5rem;
+    row-gap: 2.5rem;
     width: 100%;
     max-width: 1200px;
 
-    // En pantallas de escritorio: 2 columnas
     @media (min-width: 1024px) {
       grid-template-columns: repeat(2, 1fr);
     }
@@ -78,6 +129,7 @@ p{
       display: block;
       width: 100%;
       height: auto;
+      object-fit: cover;
     }
 
     .overlay {
