@@ -3,6 +3,7 @@ import formularioData from './pages/formulario'
 import testimoniosMainData from './pages/testimoniosMain';
 import heroData from './pages/heroImagenes';
 import serviciosData from './pages/servicios';
+import datosMesaEmpleos from './pages/mesasEmpleos';
 
 function context(page){
     console.log("Getting context for: " + page);
@@ -18,6 +19,8 @@ function context(page){
             break;
         case '/servicios.html':
             context = {...context, ...serviciosData};
+        case '/mesaEmpleos.html':
+            context = {...context, ...datosMesaEmpleos};
     }
     console.log("Context: ", JSON.stringify(context, null, 2));
     return context;
