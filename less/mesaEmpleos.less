@@ -1,0 +1,166 @@
+@import "variables.less";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.6;
+  background-color: @header-color-fondo-hover;
+  // color: #333;
+  padding: @2;
+}
+
+/* Header */
+// .header {
+//   text-align: center;
+//   margin-bottom: 2rem;
+// }
+
+// .header h1 {
+//   font-size: 2.5rem;
+//   color: #2c3e50;
+// }
+
+// .header p {
+//   font-size: 1.2rem;
+//   color: #555;
+//   margin-top: 0.5rem;
+// }
+
+/* Job Listings */
+// .career-list {
+//   display: table-column;
+//   display: flex;
+//   gap: @2;
+//   padding: @2;
+//   // display: grid;
+//   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+//   gap: 1.5rem;
+//   max-width: 1000px;
+//   margin: 0 auto;
+//   background-color: @header-color-fondo-hover;
+
+//   @media (max-width: 768px) {
+//     display: table-column;
+//   }
+// }
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// .career-list {
+//   display: grid;
+//   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+//   gap: 1.5rem;
+//   max-width: 1000px;
+//   margin: 0 auto;
+//   padding: @1; 
+//   background-color: var(@header-color-fondo-hover);
+
+//   @media (min-width: 425px) {
+//     grid-template-columns: 1fr;
+//   }
+
+//   @media (max-width: 768px) {
+//     grid-template-columns: 2fr;
+//   }
+// }
+
+
+
+// /* Job Card */
+// .job-card {
+//   // min-width: 300px;
+//   padding: @2;
+//   background: #ffffff;
+//   padding: 1.5rem;
+//   border-radius: 12px;
+//   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+//   transition: transform 0.2s ease;
+// }
+
+// .job-card:hover {
+//   transform: translateY(-5px);
+// }
+/////////////////////////////////////////////////////////////////
+
+.career-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); // 3 columns approx on wide screens
+  gap: 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: @1;  // Make sure @1 is defined in your variables.less
+
+  background-color: @header-color-fondo-hover; // Correct LESS variable usage
+
+  // Responsive layout:
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(3, 1fr);  // 2 columns on medium screens
+  }
+
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);  // 2 columns on medium screens
+  }
+
+  @media (max-width: 425px) {
+    grid-template-columns: 1fr;  // 1 column on small screens
+  }
+
+  
+  
+}
+
+/* Job Card */
+.job-card {
+  padding: @2;  // Your padding variable
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.job-card:hover {
+  transform: translateY(-5px);
+}
+
+
+.job-card h2 {
+  font-size: 1.5rem;
+  color: @header-color-fuente-hover;
+  margin-bottom: 0.5rem;
+}
+
+.job-card p {
+  margin-bottom: 0.5rem;
+}
+
+/* Apply Button */
+.apply-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #0077b6;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.apply-btn:hover {
+  background-color: #023e8a;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 2rem 0 1rem;
+  font-size: 0.9rem;
+  color: #777;
+  margin-top: 3rem;
+}
