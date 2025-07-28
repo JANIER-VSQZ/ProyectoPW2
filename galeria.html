@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+     <script type="module" src="public/menu.js"></script>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="stylesheet" href="less/principal.less">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vite App</title>
+</head>
+
+<body>
+     {{>header menu_4="true"}}
+  <main>
+
+    <section class="fondo">
+      <h1>Galería</h1>
+      <p>En nuestra galería encontrarás una selección de proyectos reales que reflejan el compromiso, la calidad y la innovación de ACE. Cada imagen muestra desde obras residenciales hasta desarrollos industriales, destacando los materiales de primera, la gestión eficiente y el acabado impecable que nos caracteriza. Explora las diferentes fases de construcción y descubre cómo nuestro equipo convierte cada idea en espacios duraderos y funcionales. ¡Déjate inspirar por nuestros proyectos y contáctanos para hacer realidad el tuyo!</p> <br> <br>
+      {{>galeria imagenData=Paisajes}}
+    </section>
+  </main>
+   {{>footer}}
+</body>
+
+</html>
