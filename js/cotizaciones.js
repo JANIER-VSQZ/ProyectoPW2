@@ -14,6 +14,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
     mostrarFormulario();
 
+    const params = new URLSearchParams(window.location.search);
+    const botonParam = params.get('boton'); // Valor enviado desde la otra página
+
+    if (botonParam) {
+        const btnTarget = document.querySelector(`.servicio[data-label="${botonParam}"]`);
+        if (btnTarget) {
+            btnTarget.classList.add('activo');
+            selected.add(botonParam);
+            mostrarSeleccion(); // Para reflejar el estado inicial
+        }
+    }
+
     document.querySelectorAll('.servicio').forEach(btn => {
         btn.addEventListener('click', () => {
             const label = btn.dataset.label;
@@ -27,6 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
             mostrarSeleccion();
         });
     });
+
 
     function mostrarSeleccion() {
         let seleccionServicio = document.getElementById('resultado-seleccion')
@@ -44,9 +57,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function mostrarFormulario() {
         if (hayBtnSeleccionado) {
-            contenedorFrm.style.display = "flex";
+            contenedorFrm.classList.add('visible');
         } else {
-            contenedorFrm.style.display = "none";
+            contenedorFrm.classList.remove('visible');
         }
     }
 
@@ -64,11 +77,11 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             campo: txtNombre, nombre: "Nombre"
         },
-        
+
         {
             campo: txtApellido, nombre: "Apellido"
         },
-        
+
         {
             campo: txtCorreo, nombre: "Correo"
         }
@@ -109,7 +122,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (!("Apellido" in error) && !regexNombreApellido.test(txtApellido.value)) {
             error["Apellido"] = "Apellido invalido";
-            hayErrores=true;
+            hayErrores = true;
         }
 
         if (!("Correo" in error) && !regexEmail.test(txtCorreo.value)) {
@@ -119,7 +132,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function validacionFormulario(e) {
-        hayErrores=false;
+        hayErrores = false;
         Object.keys(error).forEach(key => delete error[key]);
         quitarErrores();
 

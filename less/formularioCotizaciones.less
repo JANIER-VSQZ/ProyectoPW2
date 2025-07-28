@@ -9,13 +9,22 @@
         flex-direction: column;
         max-width: 1440px;
         width: 100%;
-        padding: 0.2rem 0.2rem 1rem;
         font-size: 1rem;
         gap: 1rem;
+        opacity: 0;
+        overflow: hidden;
+        max-height: 0px;
+        transition: opacity 0.5s ease-in-out, max-height 1s ease-in-out;
 
         @media(min-width: 1024px) {
             font-size: 1.2rem;
             padding: 1rem;
+        }
+        &.visible {
+            opacity: 1;
+            padding: 0.2rem 0.2rem 1rem;
+            max-height: 1000px;
+            height: auto;
         }
 
         form {
@@ -35,6 +44,11 @@
 
                 @media (min-width: 1024px) {
                     width: 49%;
+                }
+
+                .seccion-titulo {
+                    font-weight: bold;
+                    font-size: 1.5rem;
                 }
 
                 div {
@@ -73,12 +87,19 @@
                 }
 
                 button {
-                    width: 120px;
-                    height: 40px;
+                    width: 150px;
+                    height: 50px;
                     border-radius: 9px;
                     border: none;
                     background-color: white;
                     box-shadow: 0px 2px 4px darken(white, 50%);
+                    letter-spacing: 2px;
+                    font-size: 1rem;
+
+                    &:hover {
+                        background-color: rgb(130, 183, 130);
+                        box-shadow: 4px 4px 10px 2px black;
+                    }
                 }
             }
         }

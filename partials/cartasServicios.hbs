@@ -7,10 +7,12 @@
             <div class="titulo-servicio">
                 {{this.titulo}}
             </div>
+            <div class="body-servicio">
+                <p class="">{{this.descripcion}}</p>
+            </div>
             <div class="footer-servicio">
-                <p>{{this.descripcion}}</p>
                 <div class="btn-servicio">
-                    <a href="cotizaciones.html">Solicitar Cotización</a>
+                    <a href="cotizaciones.html?boton={{this.titulo}}">Solicitar Cotización</a>
                 </div>
             </div>
         </div>

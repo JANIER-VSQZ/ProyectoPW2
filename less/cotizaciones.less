@@ -1,4 +1,5 @@
 .cotizaciones {
+    background-color: @golden;
     .flex-centrado();
     margin: auto;
     width: 100vw;
@@ -10,16 +11,19 @@
     h2 {
         margin: 0px;
     }
-    
-    .mensaje-encabezado{
+
+    .mensaje-encabezado {
         margin-top: 1rem;
-        p{
+
+        p {
             text-align: justify;
         }
     }
+
     .seleccion-servicios {
-        width: 100%;
+        max-width: 1440px;
         .flex-centrado();
+        justify-content: space-between;
         flex-wrap: wrap;
         gap: 0.5rem;
 
@@ -28,8 +32,18 @@
             border: none;
             width: 80px;
             height: 40px;
-            .sombra-suave();
             border-radius: 9px;
+            background: #e0e0e0; // gris claro de fondo
+            font-weight: 600;
+            color: #4a4a4a; // texto gris oscuro
+            cursor: pointer;
+
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+            transition:
+                background-color 0.3s ease,
+                transform 0.2s ease,
+                box-shadow 0.3s ease,
+                color 0.3s ease;
 
             @media (min-width: 1024px) {
                 width: 120px;
@@ -37,8 +51,22 @@
                 font-size: 1.2rem;
             }
 
+            &:hover {
+                background: #c1f87a;
+                color: #000;
+                transform: translateY(-3px) scale(1.05);
+                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+            }
+
+            &:focus {
+                outline: none;
+                box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.6);
+            }
+
             &.activo {
-                background-color: #95e792;
+                background: linear-gradient(135deg, #029d36, #64d27e);
+                color: #000;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
             }
         }
 

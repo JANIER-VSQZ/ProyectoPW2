@@ -8,12 +8,12 @@ export default {
                 descripcionSeccion: "Informacion general del servicio",
                 campos: [
                     {
-                        label: "Dimensiones de la residencia",
+                        label: "Area del lugar",
                         id: "txtDimensiones",
                         type: "Text",
                         name: "Dimensiones",
-                        placeholder: "Dimensiones en m^2.",
-                        title: "Las medidas del lugar donde se realizara el trabajo.",
+                        placeholder: "Area superficial.",
+                        title: "El area del lugar donde se realizara el trabajo.",
                         required: true
                     },
                     {
@@ -75,10 +75,19 @@ export default {
                         title: "Correo Electronico del solicitante.",
                         required: true
                     },
+                    {
+                        label: "Telefono",
+                        id: "txtTelefono",
+                        type: "Text",
+                        name: "Telefono",
+                        placeholder: "Numero de telefono del solicitante.",
+                        title: "Numero de telefono del solicitante.",
+                        required: true
+                    },
                 ]
             },
             {
-                boton: "enviar"
+                boton: "ENVIAR"
             }
         ]
     },
