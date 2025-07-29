@@ -273,7 +273,7 @@ footer {
             text-align: center;
 
             h3 {
-                margin-bottom: 0.5rem;
+                margin-bottom: 0.7rem;
                 font-size: 1.1rem;
                 // color: @header-color-fondo-hover;
                 color: @golden;
@@ -293,6 +293,23 @@ footer {
                     line-height: 1.6;
                 }
             }
+
+            a {
+                padding: 0.7rem 1.2rem;
+                border-radius: 0.5rem;
+                font-weight: 600;
+                text-decoration: none;
+                text-align: center;
+                transition: background-color 0.3s, color 0.3s;
+
+                background-color: @header-color-boton;
+                color: white;
+
+                &:hover {
+                    background-color: @golden;
+                    color: @header-color-fuente-hover;
+                }
+            }
         }
     }
 
@@ -305,7 +322,9 @@ footer {
 
         p {
             margin-bottom: 0;
-        };
+        }
+
+        ;
     }
 
     @media (min-width: 768px) {

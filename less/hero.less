@@ -154,7 +154,8 @@
         .hero-card {
             position: relative;
             width: 40%;
-            max-width: 600px;
+            // max-width: 600px;
+            max-width: 570px;
             background-color: @header-color-fondo;
             border-bottom-right-radius: 50px;
             z-index: 2;
@@ -163,7 +164,8 @@
 
             h2 {
                 .flecha::before {
-                    content: "▼";
+                    // content: "▼";
+                    content: "▾";
                     display: inline-block;
                     margin-left: 0.5rem;
                     transition: transform 0.3s ease;
@@ -206,6 +208,9 @@
                 transition: max-height 0.6s ease, opacity 0.6s ease;
                 padding: 0;
 
+                p{
+                    margin-top: 1rem;
+                }
             }
 
             &:hover {
