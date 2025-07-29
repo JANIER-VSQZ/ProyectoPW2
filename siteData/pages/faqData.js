@@ -19,7 +19,7 @@ export const preguntasFrecuentes = [
 
   {
     pregunta: "¿En qué zonas o regiones ofrecen sus servicios?",
-    respuesta: "Actualmente trabajamos en [agregar zona geográfica específica], pero puede contactarnos para confirmar disponibilidad en su área."
+    respuesta: "Actualmente trabajamos en Estados Unidos, pero puede contactarnos para confirmar disponibilidad en su área."
   },
 
   {
