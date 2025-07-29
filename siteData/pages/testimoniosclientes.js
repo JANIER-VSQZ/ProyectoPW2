@@ -51,3 +51,5 @@ const testimonios = [
 ];
 
 export default { testimonios };
+
+//listo el ranking de estrellas 
