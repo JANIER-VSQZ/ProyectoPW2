@@ -1,5 +1,5 @@
 .cotizaciones {
-    background-color: @header-color-fondo-hover;
+    background-color: @color-fondo;
     .flex-centrado();
     margin: auto;
     width: 100vw;
@@ -33,7 +33,7 @@
             width: 80px;
             height: 40px;
             border-radius: 9px;
-            background: #e0e0e0; // gris claro de fondo
+            background: lighten(@header-color-fondo-hover, 10%); // gris claro de fondo
             font-weight: 600;
             color: #4a4a4a; // texto gris oscuro
             cursor: pointer;

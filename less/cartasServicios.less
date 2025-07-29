@@ -13,6 +13,11 @@
         width: 100%;
         margin: auto;
 
+        @media (min-width: 1024px) {
+            align-items: center;
+            flex-direction: column;
+        }
+
         @media (min-width: 1440px) {
             justify-content: space-between;
         }
@@ -34,48 +39,61 @@
                 transform: scale(1.05);
             }
 
-            .img-servicio {
+            .izquierda {
                 width: 100%;
 
-                img {
-                    .img-fit();
-                }
-            }
-
-            .titulo-servicio {
-                padding: 10px;
-                text-align: center;
-                width: 100%;
-                font-size: 1.5rem;
-                font-weight: bold;
-            }
-
-            .body-servicio{
-                padding: 10px;
-            }
-
-            .footer-servicio {
-                padding: 0px;
-                width: 100%;
-
-                .btn-servicio {
+                .img-servicio {
                     width: 100%;
-                    height: 40px;
-                    background-color: @header-color-fondo-boton;
-                    a {
-                        .flex-centrado();
-                        color: @header-color-fuente;
-                        text-decoration: none;
+
+                    img {
                         width: 100%;
                         height: 100%;
-                        text-align: center;
-                        &:hover{
-                            color: rgb(0, 195, 255);
-                        }
+                        object-fit: cover;
                     }
                 }
-
             }
+
+            .derecha {
+                .titulo-servicio {
+                    padding: 10px;
+                    text-align: center;
+                    width: 100%;
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                }
+
+                .body-servicio {
+                    padding: 10px;
+                }
+
+                .footer-servicio {
+                    padding: 0px;
+                    width: 100%;
+
+                    .btn-servicio {
+                        width: 100%;
+                        height: 40px;
+                        background-color: @header-color-fondo-boton;
+
+                        a {
+                            .flex-centrado();
+                            color: @header-color-fuente;
+                            text-decoration: none;
+                            width: 100%;
+                            height: 100%;
+                            text-align: center;
+
+                            &:hover {
+                                color: rgb(0, 195, 255);
+                            }
+                        }
+                    }
+
+                }
+            }
+
+
+
 
             &:nth-child(even) {
                 &.visible {
@@ -89,6 +107,53 @@
                     opacity: 1;
                     animation: aparecerizquierda 1s backwards;
                 }
+            }
+
+            @media (min-width: 1024px) {
+                flex: auto;
+                flex-direction: row;
+                max-width: 1256px;
+                height: 620px;
+                width: 100%;
+
+                .izquierda {
+                    height: 100%;
+                    flex: 1 1 65%;
+                    .img-servicio{
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+
+                .derecha {
+                    width: 35%;
+                    height: 620px;
+                    .flex-centrado();
+                    flex-direction: column;
+                    justify-content: space-between;
+                    .titulo-servicio{
+                        font-size: 3rem;
+                    }
+
+                    .body-servicio{
+                        font-size: 1.2rem;
+                        @media (min-width: 1430px){
+                            font-size: 1.4rem;
+                        }
+                    }
+                    .btn-servicio{
+                        height: 80px;
+                    }
+                }
+
+                &:hover{
+                    transform: scale(1.02);
+                }
+
+                &:nth-child(even){
+                    flex-direction: row-reverse;
+                }
+
             }
 
         }
