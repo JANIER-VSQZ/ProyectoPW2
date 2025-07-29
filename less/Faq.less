@@ -9,7 +9,7 @@ main {
   gap: 4rem;
   padding: @2;
   max-width: 1200px;
-  margin: 0 auto;
+  margin:  auto;
   
   @media (max-width: 768px) {
     flex-direction: column-reverse;
@@ -40,7 +40,7 @@ main {
     display: flex;
     gap: @1;
     align-items: flex-start;
-    background: #f7f7f7;
+    background: #f9fafb;
     padding: @1;
     border-radius: 10px;
 
@@ -60,7 +60,7 @@ main {
 
   .faq-contacto {
     margin-top: @1;
-    color: #3131ff;
+    color: gray;
     text-decoration: none;
     text-align: center;
 
@@ -92,12 +92,12 @@ main {
 }
 
 .faq-pregunta {
-  background-color: @header-color-fondo-boton;
+  background-color: @header-color-fondo;
   color: @header-color-fuente;
   padding: @1;
   width: 100%;
   text-align: left;
-  font-size: 1.1rem;
+  font-size: @1;
   font-weight: bold;
   border: none;
   cursor: pointer;
@@ -117,7 +117,7 @@ main {
 }
 
 .faq-respuesta {
-  background-color: white;
+  background-color: #f9fafb;
   padding: @1;
   font-size: 1rem;
   line-height: 1.5;
