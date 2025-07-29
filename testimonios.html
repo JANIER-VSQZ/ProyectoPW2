@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="less/principal.less" />
+    <script type="module" src="/menu.js"></script>
+    <title>Testimonios Clientes</title>
+</head>
+
+<body>
+    {{> header menu_5="true"}}
+    <main>
+    <section class="testimonios">
+      <h2>Testimonios de nuestros clientes</h2>
+      <div class="testimonios-grid">
+        {{#each testimonios}}
+          {{> testimoniosclientes}}
+        {{/each}}
+      </div>
+    </section>
+  </main>
+    {{> footer }}
+</body>
+
+</html>
