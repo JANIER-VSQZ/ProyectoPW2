@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <script type="module" src="public/menu.js"></script>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="stylesheet" href="less/principal.less">
+  <link rel="stylesheet" href="less/proyectos-destacados.less">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyectos Destacados</title>
+</head>
+<body>
+  {{>header menu_2="true"}}
+  <main>
+    <section class="proyectos-destacados">
+      {{>proyectos-destacados proyectos=proyectos}}
+    </section>
+  </main>
+  {{>footer}}
+</body>
+</html>
