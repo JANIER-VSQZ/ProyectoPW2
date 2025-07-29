@@ -1,11 +1,11 @@
 .cotizaciones {
-    background-color: @header-color-fondo-hover;
+    background-color: @color-fondo;
     .flex-centrado();
     margin: auto;
     width: 100vw;
     text-align: center;
     flex-direction: column;
-    padding: 0.2rem 0.2rem 0rem;
+    padding: 0.2rem 1rem 0rem;
     gap: 1rem;
 
     h2 {
@@ -23,7 +23,7 @@
     .seleccion-servicios {
         max-width: 1440px;
         .flex-centrado();
-        justify-content: space-between;
+        justify-content: space-around;
         flex-wrap: wrap;
         gap: 0.5rem;
 
@@ -33,7 +33,7 @@
             width: 80px;
             height: 40px;
             border-radius: 9px;
-            background: #e0e0e0; // gris claro de fondo
+            background: lighten(@header-color-fondo-hover, 10%); // gris claro de fondo
             font-weight: 600;
             color: #4a4a4a; // texto gris oscuro
             cursor: pointer;

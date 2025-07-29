@@ -1,9 +1,12 @@
 <section class="cartas-servicios">
     {{#each cartaData}}
-        <div class="carta-servicio">
+    <div class="carta-servicio">
+        <div class="izquierda">
             <div class="img-servicio">
                 <img src={{this.imgLink}} alt="imagen {{this.titulo}}">
             </div>
+        </div>
+        <div class="derecha">
             <div class="titulo-servicio">
                 {{this.titulo}}
             </div>
@@ -16,5 +19,6 @@
                 </div>
             </div>
         </div>
+    </div>
     {{/each}}
 </section>

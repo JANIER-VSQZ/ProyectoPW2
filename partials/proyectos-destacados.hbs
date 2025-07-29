@@ -1,0 +1,14 @@
+<h2>Proyectos Destacados</h2>
+  <p class="descripcion">
+    Conoce tres de nuestros trabajos más representativos que reflejan nuestro compromiso con la calidad,
+    el detalle y la satisfacción del cliente.
+  </p>
+
+  <div class="lista-proyectos">
+    {{#each proyectos}}
+      {{> proyecto-cards
+         imgLink=imgLink
+         titulo=titulo
+         descripcion=descripcion}}
+    {{/each}}
+  </div>

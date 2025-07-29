@@ -1,0 +1,127 @@
+@background-page: #f4f4f4;
+@card-bg: #ffffff;
+@accent: #daa520;
+@text-color: #2e2e2e;
+@shadow: rgba(0, 0, 0, 0.1);
+
+.proyectos-destacados {
+  background-color: @background-page;
+  padding: 3rem 1rem;
+  color: @text-color;
+  text-align: center;
+
+  h2 {
+    font-size: 2.4rem;
+    color: @accent;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .descripcion {
+    max-width: 720px;
+    margin: 0 auto 2rem;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: darken(@text-color, 20%);
+    text-align: justify;
+  }
+
+  .lista-proyectos {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .proyecto-card {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+    background-color: @card-bg;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px @shadow;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease-in-out;
+
+    &:hover {
+      box-shadow: 0 8px 20px @shadow;
+    }
+
+    .imagen-container {
+      flex: 0 0 auto;
+      max-width: 100%;
+      width: 100%;
+      height: 100%;
+      transition: max-width 1.2s ease-in-out;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .contenido {
+      flex: 0 0 auto;
+      max-width: 0;
+      height: 100%;
+      padding: 2.5rem;
+      background-color: @card-bg;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      opacity: 0;
+      overflow: hidden;
+      transition:
+        max-width 1.2s ease-in-out,
+        opacity 0.6s ease-in-out;
+
+      h3 {
+        font-size: 1.8rem;
+        color: @accent;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        font-size: 1rem;
+        line-height: 1.8;
+        color: darken(@text-color, 20%);
+        text-align: justify;
+      }
+    }
+
+    &:hover {
+      .imagen-container {
+        max-width: 70%;
+      }
+      .contenido {
+        max-width: 30%;
+        opacity: 1;
+      }
+    }
+
+    @media (max-width: 768px) {
+      height: auto;
+
+      .imagen-container,
+      .contenido {
+        position: static;
+        width: 100%;
+        height: auto;
+        transform: none;
+      }
+
+      .contenido {
+        max-width: 100%;
+        opacity: 1;
+        padding: 1.5rem;
+        text-align: left;
+      }
+    }
+  }
+}

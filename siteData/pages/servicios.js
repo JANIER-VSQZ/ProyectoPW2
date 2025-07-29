@@ -17,7 +17,7 @@ export default{
         },
         {
             titulo: "Chimeneas",
-            imgLink: "https://picsum.photos/id/548/300/200",
+            imgLink: "https://picsum.photos/id/548/1200/1000",
             descripcion: "Ofrecemos limpieza, inspección y reparación de chimeneas para garantizar un tiro seguro y eficiente. Atendemos fisuras en mampostería, repicado de juntas (repointing), instalación de coronas protectoras y reemplazo de revestimientos interiores. Nuestro servicio incluye certificación de cumplimiento con códigos locales y recomendaciones para evitar incendios de hollín o filtraciones de agua. Con un mantenimiento regular, prolongamos la vida útil de tu chimenea y mejoramos la calidad del aire interior."
         },
         {
