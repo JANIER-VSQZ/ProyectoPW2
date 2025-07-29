@@ -8,13 +8,14 @@
 
 body {
   background-color: @color-fondo;
-  padding: @2;
+  // padding: @2;
 
   .job-card {
     display: flex;
     // flex-wrap: wrap;
     gap: @2;
     padding: @2;
+    margin: @2;
     background-color: @header-color-fondo;
     
     border-radius: @2;
@@ -26,6 +27,11 @@ body {
 
     @media (max-width: 768px) {
       flex-direction: column;
+    }
+
+    @media (min-width: 768px) {
+      flex-direction: column;
+      margin: @2 @2 @2 @2;
     }
 
     transition: transform 0.3s ease;
