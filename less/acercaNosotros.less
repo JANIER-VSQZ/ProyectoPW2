@@ -12,11 +12,6 @@
         margin: auto;
         gap: @2;
 
-        @media (max-width: 768px) {
-            flex-direction: column;
-            text-align: center;
-        }
-
         .acerca-imagenes {
             flex: 1;
             position: relative;
@@ -85,4 +80,22 @@
             }
         }
     }
+}
+
+
+@media (max-width: 768px) {
+    .acerca-nosotros {
+        flex-direction: row;
+        text-align: center;
+        justify-content: space-around;
+        padding: 2rem;
+    }
+    .acerca-contenido {
+        flex-direction: column-reverse;
+
+    }
+    .acerca-texto {
+        align-self: auto;
+    }
+ 
 }
