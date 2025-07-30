@@ -14,5 +14,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // enseña la nueva
     slides[index].classList.add("active");
-  }, 4000);
+  }, 3000);
 });
