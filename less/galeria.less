@@ -34,12 +34,9 @@
       cursor: pointer;
       font-size: 2rem;
       letter-spacing: 1px;
-      color: @text-color; 
+      color: @color-titulo; 
       text-transform: uppercase;
       padding-bottom: 0;
-
-      animation: glow 2.5s infinite ease-in-out;
-
       &:hover {
         animation-play-state: paused;
       }
@@ -83,12 +80,6 @@
     }
   }
 
-  @keyframes glow {
-    0%   { text-shadow: 0 0 5px @accent; }
-    50%  { text-shadow: 0 0 20px lighten(@accent, 10%); }
-    100% { text-shadow: 0 0 5px @accent; }
-  }
-
   .botones-galeria{
     .flex-centrado();
     flex-direction: column;
@@ -105,6 +96,10 @@
       font-size: 1.1rem;
       &.visible{
         display: inline-block;
+      }
+
+      &:hover{
+        box-shadow: 4px 4px 10px  black;
       }
     }
   }
