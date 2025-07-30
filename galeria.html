@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
   <script type="module" src="public/menu.js"></script>
+  <script type="module" src="js/galeriaScript.js"></script>
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <link rel="stylesheet" href="less/principal.less">
@@ -21,8 +22,13 @@
       En nuestra galería encontrarás ejemplos reales de nuestros trabajos en roofing, siding y acabados exteriores. Cada proyecto refleja la calidad y precisión que nos caracteriza, desde la colocación de tejas resistentes hasta revestimientos duraderos que embellecen fachadas. Además, ofrecemos veredas y escaleras exteriores como servicios independientes, para conectar de forma segura y armoniosa tu vivienda con su entorno. Explora nuestras soluciones y descubre cómo podemos transformar cada detalle en un espacio funcional y estético.
     </p>
   </div>
-
-  {{>galeria imagenData=Paisajes}}
+  <div class="botones-galeria">
+    <p>Click en el boton para ir a: </p>
+    <button type="button" id="btnGaleria">Galeria Imagenes</button>
+    <button type="button" id="btnHerramientas">Galeria Herramientas</button>
+  </div>
+  {{>galeria trabajos}}
+  {{>galeria herramientas}}
 </section>
   </main>
   {{>footer}}

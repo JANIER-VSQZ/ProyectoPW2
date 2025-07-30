@@ -1,4 +1,4 @@
-@background-page: #f4f4f4;
+
 @card-bg: #ffffff;
 @accent: #daa520;
 @text-color: #2e2e2e;
@@ -11,7 +11,7 @@
 }
 
 .fondo {
-  background-color: @background-page;
+  background-color: @color-fondo;
   font-family: 'Helvetica Neue', Arial, sans-serif;
   color: @text-color;
   min-height: 100vh;
@@ -89,13 +89,36 @@
     100% { text-shadow: 0 0 5px @accent; }
   }
 
+  .botones-galeria{
+    .flex-centrado();
+    flex-direction: column;
+    width: 300px;
+    height: 80px;
+    button{
+      background-color: @header-color-fondo-boton;
+      display: none;
+      border: none;
+      height: 70%;
+      width: 120px;
+      border-radius: 9px;
+      color: @header-color-fuente;
+      font-size: 1.1rem;
+      &.visible{
+        display: inline-block;
+      }
+    }
+  }
+
   .galeria {
-    display: grid;
+    display: none;
     grid-template-columns: 1fr;
     column-gap: 5rem;
     row-gap: 2.5rem;
     width: 100%;
     max-width: 1200px;
+    &.visible{
+      display: grid;
+    }
 
     @media (min-width: 1024px) {
       grid-template-columns: repeat(2, 1fr);
