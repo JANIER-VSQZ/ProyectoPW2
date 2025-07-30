@@ -46,6 +46,7 @@
     box-shadow: 0 4px 12px @shadow;
     overflow: hidden;
     transition: box-shadow 0.3s ease-in-out;
+    opacity: 0;
 
     &:hover {
       box-shadow: 0 8px 20px @shadow;
@@ -95,18 +96,22 @@
       }
     }
 
-    &:hover {
-      .imagen-container {
-        max-width: 70%;
-      }
-      .contenido {
-        max-width: 30%;
-        opacity: 1;
+    @media (min-width: 1024px) {
+      &:hover {
+        .imagen-container {
+          max-width: 70%;
+        }
+
+        .contenido {
+          max-width: 30%;
+          opacity: 1;
+        }
       }
     }
 
     @media (max-width: 768px) {
       height: auto;
+      flex-wrap: wrap;
 
       .imagen-container,
       .contenido {
@@ -123,5 +128,22 @@
         text-align: left;
       }
     }
+
+    &.visible {
+      opacity: 1;
+      animation: aparecerderecha 1s backwards;
+    }
+  }
+}
+
+@keyframes aparecerderecha {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
   }
 }

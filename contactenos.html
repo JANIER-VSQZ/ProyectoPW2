@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="less/principal.less" />
+    <script type="module" src="/menu.js"></script>
+    <title>Contáctanos</title>
+</head>
+
+<body>
+    {{> header menu_9="true"}}
+
+    <main class="contacto-main">
+        <section class="contacto-contenedor">
+            <div class="imagen-contacto">
+                <img src="/images/construccion.jpg" alt="Imagen de la constructora" />
+            </div>
+
+            <div class="formulario-contacto">
+                <h2>¿Tienes dudas? ¡Escríbenos!</h2>
+                {{> contactanos }}
+
+                <div class="contacto-numeros">
+                    <h3>Números de Contacto</h3>
+                    <ul>
+                        <li>201-951-3723</li>
+                        <li>973-288-4024</li>
+                        <li>973-337-7454</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    {{> footer }}
+</body>
+
+</html>
+
+//cambios contacto

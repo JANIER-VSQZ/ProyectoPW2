@@ -6,6 +6,7 @@ import serviciosData from './pages/servicios';
 import datosMesaEmpleos from './pages/mesasEmpleos';
 import galeriaData from './pages/galeria';
 import proyectosDestacadosData from './pages/proyectosdestacados';
+import testimoniosclienteData from './pages/testimoniosclientes';
 
 function context(page){
     console.log("Getting context for: " + page);
@@ -30,6 +31,11 @@ function context(page){
             break;
         case '/mesaEmpleos.html':
             context = {...context, ...datosMesaEmpleos};
+            break;
+        case '/testimonios.html':
+            context = {...context, ...testimoniosclienteData};
+            break;
+  
     }
     console.log("Context: ", JSON.stringify(context, null, 2));
     return context;
