@@ -32,13 +32,13 @@
             border: none;
             width: 80px;
             height: 40px;
-            border-radius: 9px;
+            border-radius: 30px;
             background: lighten(@header-color-boton, 10%); // gris claro de fondo
             font-weight: 600;
             color: @header-color-fuente; // texto gris oscuro
             cursor: pointer;
 
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+            box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
             transition:
                 background-color 0.3s ease,
                 transform 0.2s ease,
@@ -57,14 +57,8 @@
                 transform: translateY(-3px) scale(1.05);
                 box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
             }
-
-            &:focus {
-                outline: none;
-                box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.6);
-            }
-
             &.activo {
-                background: linear-gradient(135deg, #032ff5, #0496f8);
+                background: linear-gradient(105deg, #9df6bc, #9cf082);
                 color: #000;
                 box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
             }

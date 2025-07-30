@@ -11,18 +11,19 @@ document.addEventListener('DOMContentLoaded', () => {
     const txtNombre = document.getElementById("txtNombre");
     const txtApellido = document.getElementById("txtApellido");
     const txtCorreo = document.getElementById("txtCorreo");
+    const txtTelefono=document.getElementById("txtTelefono");
 
     mostrarFormulario();
 
     const params = new URLSearchParams(window.location.search);
-    const botonParam = params.get('boton'); // Valor enviado desde la otra página
+    const botonParam = params.get('boton');
 
     if (botonParam) {
         const btnTarget = document.querySelector(`.servicio[data-label="${botonParam}"]`);
         if (btnTarget) {
             btnTarget.classList.add('activo');
             selected.add(botonParam);
-            mostrarSeleccion(); // Para reflejar el estado inicial
+            mostrarSeleccion();
         }
     }
 
@@ -84,6 +85,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
         {
             campo: txtCorreo, nombre: "Correo"
+        },
+
+        {
+            campo: txtTelefono, nombre: "Telefono"
         }
     ];
 
@@ -110,6 +115,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         const regexNumero = /^\d+$/;
         const regexNombreApellido = /^[A-Za-zÁÉÍÓÚáéíóúÑñ]+( [A-Za-zÁÉÍÓÚáéíóúÑñ]+)?$/;
+        const regexTelefono=/^\+?[0-9\s().-]{7,20}$/;
         if (!("Dimensiones" in error) && !regexNumero.test(txtDimensiones.value)) {
             error["Dimensiones"] = "Solo ingrese numeros";
             hayErrores = true;
@@ -128,6 +134,11 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!("Correo" in error) && !regexEmail.test(txtCorreo.value)) {
             error["Correo"] = "Correo invalido.";
             hayErrores = true;
+        }
+
+        if (!("Telefono" in error) && !regexTelefono.test(txtTelefono.value)){
+            error["Telefono"]="Ingrese un numero telefonico valido";
+            hayErrores=true;
         }
     }
 

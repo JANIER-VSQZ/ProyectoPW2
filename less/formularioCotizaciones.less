@@ -91,13 +91,15 @@
                     height: 50px;
                     border-radius: 9px;
                     border: none;
-                    background-color: white;
+                    background-color: @header-color-boton;
+                    color: @header-color-fuente;
                     box-shadow: 0px 2px 4px darken(white, 50%);
                     letter-spacing: 2px;
                     font-size: 1rem;
 
                     &:hover {
-                        background-color: rgb(130, 183, 130);
+                        background-color: @header-color-fondo-hover;
+                        color: @header-color-fuente-hover;
                         box-shadow: 4px 4px 10px 2px black;
                     }
                 }
