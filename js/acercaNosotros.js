@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // esconde img
     slides[index].classList.remove("active");
 
-    // prepara la siguiente
+    // prepara la siguiente img
     index = (index + 1) % slides.length;
 
     // enseña la nueva
