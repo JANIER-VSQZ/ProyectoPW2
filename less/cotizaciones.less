@@ -5,11 +5,13 @@
     width: 100vw;
     text-align: center;
     flex-direction: column;
-    padding: 0.2rem 1rem 0rem;
     gap: 1rem;
+    padding: 0rem 0.2rem;
 
-    h2 {
-        margin: 0px;
+    h1 {
+        font-size: 2rem;
+        color: @color-titulo;
+        padding: 2rem 0rem;
     }
 
     .mensaje-encabezado {
@@ -33,9 +35,9 @@
             width: 80px;
             height: 40px;
             border-radius: 9px;
-            background: lighten(@header-color-fondo-hover, 10%); // gris claro de fondo
+            background: lighten(@header-color-boton, 10%); // gris claro de fondo
             font-weight: 600;
-            color: #4a4a4a; // texto gris oscuro
+            color: @header-color-fuente; // texto gris oscuro
             cursor: pointer;
 
             box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
@@ -52,8 +54,8 @@
             }
 
             &:hover {
-                background: #c1f87a;
-                color: #000;
+                background: @header-color-fondo-hover;
+                color: @header-color-fuente-hover;
                 transform: translateY(-3px) scale(1.05);
                 box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
             }
@@ -64,7 +66,7 @@
             }
 
             &.activo {
-                background: linear-gradient(135deg, #029d36, #64d27e);
+                background: linear-gradient(135deg, #032ff5, #0496f8);
                 color: #000;
                 box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
             }
