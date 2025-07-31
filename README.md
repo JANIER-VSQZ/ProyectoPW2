@@ -1,5 +1,5 @@
 0801199910370
-CARLOS DANIEL GALO LAGOS (DAGLOS)
+Carlos Daniel Galo Lagos (Daglos)
 
 0615200300421
 Richard Bayardo Galo Amador (Rick282003)
