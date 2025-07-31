@@ -12,3 +12,6 @@ Diego Augusto Hernández Lara (DiegoHernandez987)
 
 1308200400108
 Janier Obed Vasquez Garcia (JANIER-VSQZ)
+
+0601199001527 
+Juan Ramon Aguilar Martinez  (JuanRa012012)
