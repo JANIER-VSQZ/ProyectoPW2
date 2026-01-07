@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="less/principal.less">
     <script type="module" src="/menu.js"></script>
     <script type="module" src="js/servicioScript.js"></script>
+    <script type="module" src="/i18n.js"></script>
     <title>Servicios</title>
 </head>
 
@@ -13,8 +14,8 @@
     {{>header menu_1="true"}}
     <main style="background-color: rgba(131, 236, 201, 0.801);">
         <section class="servicios-contenedor">
-            <h1>Servicios</h1>
-            <p>Servicios integrales de mantenimiento residencial
+            <h1 data-i18n="serviciosPage.title">Servicios</h1>
+            <p data-i18n="serviciosPage.description">Servicios integrales de mantenimiento residencial
                 Ofrecemos soluciones técnicas en reparaciones, instalaciones y mantenimiento preventivo de viviendas.
                 Nuestro objetivo es extender la vida útil de tus instalaciones y mejorar el confort en tu hogar con un
                 servicio eficiente y de confianza.</p>
@@ -22,6 +23,7 @@
         </section>
     </main>
     {{>footer}}
+    
 </body>
 
 </html>

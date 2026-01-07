@@ -1,0 +1,36 @@
+{
+  "serviciosPage": {
+    "title": "Services",
+    "description": "Comprehensive residential maintenance services. We offer technical solutions in repairs, installations, and preventive maintenance of homes. Our goal is to extend the useful life of your installations and improve comfort in your home with efficient and reliable service."
+  },
+  "servicios": [
+    {
+      "titulo": "Asphalt Roofs",
+      "descripcion": "Asphalt roofs are the most common and cost-effective option to protect your home against rain, hail, and intense sun. With fiberglass or wood composites, asphalt shingles offer excellent waterproofing and a lifespan of 20 to 30 years. Their quick and easy installation minimizes disruptions, while the variety of colors and styles enhances the aesthetics of any home. Additionally, they are easy to repair and recycle, reducing long-term cost and environmental impact."
+    },
+    {
+      "titulo": "Metal Roofs",
+      "descripcion": "Metal roofs combine strength and longevity, lasting up to 50 years under extreme conditions. Made from steel, aluminum, or copper, they repel heat and withstand strong winds, heavy snow, and hail without cracking. Their light and thin profile reduces structural load, ideal for renovations over existing roofs. They are available in matte, glossy finishes, or with special coatings, giving a modern and minimalist look."
+    },
+    {
+      "titulo": "Siding",
+      "descripcion": "Siding is an exterior layer that protects and decorates facades, improving thermal insulation and energy efficiency. Available in vinyl, fiber cement, treated wood, or composite panels, it provides resistance to moisture, insects, and sun fading. Its maintenance is minimal: just periodic washing to preserve color and material integrity. Additionally, it allows customization of the home's style with a wide palette of textures and tones."
+    },
+    {
+      "titulo": "Chimneys",
+      "descripcion": "We offer cleaning, inspection, and repair of chimneys to ensure safe and efficient draft. We address cracks in masonry, joint repointing, installation of protective crowns, and replacement of interior linings. Our service includes certification of compliance with local codes and recommendations to prevent soot fires or water leaks. With regular maintenance, we extend the lifespan of your chimney and improve indoor air quality."
+    },
+    {
+      "titulo": "Exterior Concrete",
+      "descripcion": "We specialize in the construction and restoration of concrete surfaces such as patios, driveways, sidewalks, and terraces. We use high-resistance mixes that withstand temperature changes, oils, and vehicle weight. We offer smooth, stamped, and polished finishes, adapting to your home's style and adding aesthetic and functional value. Additionally, we apply waterproofing sealers to reduce cracks and stains over time."
+    },
+    {
+      "titulo": "Framing",
+      "descripcion": "Framing or wood framing is the foundation of any safe and durable construction. We install beams, studs, and structural panels with selected woods and moisture-resistant and fire-retardant treatments. Our process ensures uniform load distribution, moderate seismic resistance, and ease of incorporating electrical and plumbing installations. Ideal for expansions, internal renovations, or supporting new levels in your home."
+    },
+    {
+      "titulo": "Stairs",
+      "descripcion": "We design and install interior and exterior stairs that combine ergonomics, aesthetics, and regulatory compliance. We work with solid wood, metal, or reinforced concrete, offering safe railings and non-slip steps. Each project adapts to the available space, optimizing light and circulation flow. Our approach integrates quality finishes and personalized details, from curved handrails to integrated step lighting."
+    }
+  ]
+}
